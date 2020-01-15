@@ -1,0 +1,65 @@
+
+from turtle import *
+
+
+clear() # effacer la page
+shape("turtle") # forme
+print(towards(0,0)) # angle entre la position indiqué et la ligne (pas compris)
+
+#bgcolor("red") #???
+color("grey") 
+
+print(position(),heading()) # donner position et orientation
+speed(0) # vitesse e dessin de 1 à 10-0
+for i in range(0):
+    forward(150) #fd positif déplacement à droite
+    left(90) #lt positif sens contraire de l'horloge
+
+circle(120, 180) # diamètre, angle tracé, nombre d'étapes
+goto(0,0) #setpos aller à la position
+setx(-30) # deplacement sur 
+pensize(5) # taille du stylo
+sety(30) #deplacement sur y
+seth(0) #setheading "standard"0-E/90-N
+dot(20, "blue") # cercle avec couleur
+home() # etour au centre
+
+
+for i in range(8): 
+    undo() # (pas compris) mais normalement c'est pour répéter la dernière action
+
+print(distance(10,10))
+print(position(),heading())
+
+degrees(360) #défini le nombre de degré pour un cerle par défaut c'est 360
+radians() # tarnforme les angles en radiant
+penup() #pu()
+pendown() #pd()
+pensize() #width()
+showturtle() # montrer la turtue
+#isvisible()
+#hideturtle() # cacher la turtue
+def turn(x, y):
+    left(180)
+
+onclick(turn)  # Now clicking into the turtle will turn it.
+#onclick(None)  # event-binding will be removed
+
+
+penup() #pu()
+goto(-150,0)
+pendown()
+forward(50) # On avance
+left(90) # 90 degrés à gauche
+forward(50)
+width(5) # Epaisseur du trait
+forward(100)
+color('red')
+right(90)
+forward(100)
+color('green')
+circle(-50,180)
+
+
+
+
